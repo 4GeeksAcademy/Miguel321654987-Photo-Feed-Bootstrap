@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Instagram Photo Feed</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+                <div class="container-fluid d-flex justify-content-end">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <p class="py-0 my-0"><b>
+                                Create a new post
+                    </button>
+                    </b></p>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body py-1">
+                                    <p>Caption</p>
+                                </div>
+                                <div class="modal-body border mx-2">
+                                    Add the caption of your post here
+                                </div>
+                                <div class="m-2">
+                                    <span><i class="fa-solid fa-camera border mx-2"></i><i
+                                            class="fa-solid fa-location-dot px-4"></i></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example single  button -->
+                    <div class="btn-group dropstart ms-2">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear text-white "></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Botones cambio de página -->
+        <nav class="d-flex justify-content-center">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist justify">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true"> <i
+                        class="fas fa-th"></i></a></button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                        class="fa-solid fa-square"></i></button>
+            </div>
+        </nav>
+
+        <!-- Imágenes -->
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <div class="container-fluid d-grid gap-3">
+                    <div class="row">
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2016/08/18/02/07/landscape-1602016_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2025/09/10/18/56/stone-9826860_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2023/01/10/16/23/hedgehog-7710053_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2025/02/21/19/48/nature-9422880_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2025/07/18/06/10/elephant-9720736_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                        <div class="col-4"><img src="https://cdn.pixabay.com/photo/2022/05/26/22/14/lake-7223904_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2025/09/29/15/39/tractor-9862727_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2025/05/26/00/39/australian-pelican-9622118_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                        <div class="col-4"><img
+                                src="https://cdn.pixabay.com/photo/2025/09/23/19/27/nature-9851216_1280.jpg"
+                                class="rounded" style="width:100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="card mx-auto">
+            <div class="container-fluid d-flex">
+                <div>
+                    <h4><b>Un descanso</b></h4>
+                </div>
+                <div >
+                    <p><b>11/29</p>
+                </div>
+            </div>
+            <img src="https://cdn.pixabay.com/photo/2025/09/23/19/27/nature-9851216_1280.jpg" alt="...">
+            <div class="card-body mx-auto">
+                <h5><b>33 Likes</b></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam totam commodi officiis suscipit
+                    eligendi voluptate nostrum sunt accusamus ut excepturi accusantium, tenetur eum magni voluptatibus a
+                    maiores cum sed.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
